@@ -1,0 +1,37 @@
+{
+  "name": "blitz1914-game",
+  "version": "0.0.1",
+  "description": "A fast paced world domination game based on the online RTS game, Supremacy1914.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -r dotenv/config ./app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karldamus/Blitz1914-Game.git"
+  },
+  "author": "Karl Damus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karldamus/Blitz1914-Game/issues"
+  },
+  "homepage": "https://github.com/karldamus/Blitz1914-Game#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "jsvectormap": "^1.5.3",
+    "mongodb": "6.5",
+    "mongoose": "^8.3.1",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.7.5",
+    "uuid": "^9.0.1",
+    "validator": "^13.11.0"
+  }
+}
