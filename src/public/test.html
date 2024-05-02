@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jsVectorMap</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/jsvectormap/dist/css/jsvectormap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+	<header>
+		test
+	</header>
+
+    <div id="map"></div>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/jsvectormap"></script>
+    <script src="https://unpkg.com/jsvectormap/dist/maps/world-merc.js"></script>
+	<script src="https://unpkg.com/jsvectormap/dist/maps/world.js"></script>
+	<script src="js/maps/canada.js"></script>
+	<script src="js/maps/us_merc_en.js"></script>
+
+    <script>
+    //   var markers = [
+    //     // { name: "Egypt", coords: [26.8206, 30.8025] },
+    //     // { name: "Russia", coords: [61.524, 105.3188] },
+    //     { name: "Canada", coords: [56.1304, -106.3468] },
+    //     // { name: "Greenland", coords: [71.7069, -42.6043] },
+    //     // { name: "Brazil", coords: [-14.235, -51.9253] }
+    //   ];
+
+	// loop through all values in canada.js
+	// for (var i = 0; i < canada.length; i++) {
+
+	// var canada = require('./js/maps/canada.js');
+
+	var jvm = new jsVectorMap({
+	map: "canada",
+	selector: "#map",
+	zoomButtons: true,
+	zoomOnScroll: true,
+	regionsSelectable: true,
+
+	regionStyle: {
+		initial: {
+			fill: "#d1d5db",
+			stroke: "white",
+			"stroke-width": 0.5
+		},
+
+		// hover: {
+		// 	fill: "green",
+		// 	stroke: "#000",
+		// 	"stroke-width": 1
+		
+		// },
+
+		selected: {
+			// random color
+			fill: "red"
+			
+		
+		}
+		
+	},
+
+	
+	});
+
+	  
+    </script>
+
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+
+   
+  </body>
+</html>
