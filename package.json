@@ -4,7 +4,8 @@
   "description": "A fast paced world domination game based on the online RTS game, Supremacy1914.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon -r dotenv/config ./index.js"
+    "dev": "nodemon -r dotenv/config ./index.js",
+    "start": "node -r dotenv/config ./index.js"
   },
   "repository": {
     "type": "git",
