@@ -9,12 +9,17 @@ app.use(session({
 	saveUninitialized: true
 }));
 
+app.use(express.static(__dirname + '/src/public'));
+
 // initialize session
 
 
 app.get('/*', (req, res, next) => {
 	// to do something on every GET request
-	req.session.username = "dev";
+    // if (process.env.DEV_MODE == true)
+	    req.session.username = "dev";
+    // else 
+    //     req.session.username = null;
 
 	next();
 });
