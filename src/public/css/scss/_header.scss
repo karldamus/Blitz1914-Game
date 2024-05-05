@@ -1,0 +1,35 @@
+header {
+    // background-color: #0f4826;
+    // background: linear-gradient()
+    // background linear gradient from #151515 to #534639 to #866657
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1em 2em;
+
+    img {
+        max-width: 400px;
+    }
+
+}
+
+nav {
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin: 0 1em;
+
+            a {
+                color: #e2b56f;
+            }
+        }
+    }
+}

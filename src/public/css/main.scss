@@ -1,3 +1,6 @@
+@import 'scss/header';
+@import 'scss/index';
+
 @import 'scss/interactables';
 
 @import 'scss/map';
@@ -7,13 +10,30 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    list-style-type: none;
 }
 
 body {
-	border: 1px solid black;
+    // margin: 1em;
+	// border: 1px solid black;
 	min-height: 100vh;
+    // background: linear-gradient(180deg, #583c1e, #995d35, #eb6d32, #fe941c);
+    // color: white;
 }
 
 h1 {
 	margin-bottom: 0.5em;
+}
+
+// fonts
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'SF Pro', sans-serif;
+}
+
+p, span, a, li {
+    font-family: 'Open Sans', sans-serif
+}
+
+a {
+    // color: white;
 }
