@@ -11,7 +11,8 @@ router.get('/*', (req, res, next) => {
 });
 
 router.get('/', (req, res) => {
-	res.send('index');
+	// send ../public/views/index.html
+    res.sendFile('index.html', { root: 'src/public/' });
 });
 
 module.exports = router;
